@@ -2,9 +2,9 @@ import pytest
 import uuid
 from unittest import mock
 
-from rentomtic.domain.room import Room
-from rentomtic.use_cases.room_list import room_list_use_case
-from rentomtic.requests.room_list import build_room_list_request
+from rentomatic.domain.room import Room
+from rentomatic.use_cases.room_list import room_list_use_case
+from rentomatic.requests.room_list import build_room_list_request
 
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 import pytest
 
-from rentomtic.requests.room_list import build_room_list_request
+from rentomatic.requests.room_list import build_room_list_request
 
 
 def test_build_room_list_request_without_parameters():

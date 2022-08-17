@@ -1,4 +1,4 @@
-from rentomtic.responses import ResponseSuccess
+from rentomatic.responses import ResponseSuccess
 
 
 def room_list_use_case(repo, request):

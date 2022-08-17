@@ -2,9 +2,9 @@ import json
 
 from flask import Blueprint, Response
 
-from rentomtic.repository.memrepo import MemRepo
-from rentomtic.use_cases.room_list import room_list_use_case
-from rentomtic.serialisers.room import RoomJsonEncoder
+from rentomatic.repository.memrepo import MemRepo
+from rentomatic.use_cases.room_list import room_list_use_case
+from rentomatic.serialisers.room import RoomJsonEncoder
 
 blueprint = Blueprint("room", __name__)
 

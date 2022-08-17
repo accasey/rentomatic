@@ -1,4 +1,4 @@
-from rentomtic.domain.room import Room
+from rentomatic.domain.room import Room
 
 
 class MemRepo:
