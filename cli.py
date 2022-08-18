@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
-from rentomtic.repository.memrepo import MemRepo
-from rentomtic.use_cases.room_list import room_list_use_case
+from rentomatic.repository.memrepo import MemRepo
+from rentomatic.use_cases.room_list import room_list_use_case
+from rentomatic.requests.room_list import build_room_list_request
 
 rooms = [
     {
@@ -33,7 +34,9 @@ rooms = [
         "latitude": 51.39916678,
     },
 ]
-repo = MemRepo(rooms)
-result = room_list_use_case(repo)
 
-print([room.to_dict() for room in result])
+request = build_room_list_request()
+repo = MemRepo(rooms)
+response = room_list_use_case(repo, request)
+
+print([room.to_dict() for room in response.value])
